@@ -1,8 +1,8 @@
-/* ═══════════════════════════════════════════════════════════════════════════════
-   VentoEdu — Dashboard PREMIUM v2.0
-   ═══════════════════════════════════════════════════════════════════════════════ */
+/* =================================================================================
+   VentoEdu -- Dashboard PREMIUM v2.0
+   ================================================================================= */
 
-/* ── Page ── */
+/* -- Page -- */
 .dashboard-page {
   min-height: 100vh;
   background: linear-gradient(165deg, #0f0f23 0%, #1a1a3e 30%, #0d1b2a 60%, #1b2838 100%);
@@ -34,7 +34,7 @@
 @keyframes orbFloat1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(100px,80px)} }
 @keyframes orbFloat2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-80px,-100px)} }
 
-/* ── Floating Particles ── */
+/* -- Floating Particles -- */
 .floating-particles { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
 .particle {
   position: absolute; bottom: -30px;
@@ -48,7 +48,7 @@
   100% { transform: translateY(-110vh) rotate(360deg) scale(0.4); opacity: 0; }
 }
 
-/* ── Navbar ── */
+/* -- Navbar -- */
 .dash-navbar {
   background: rgba(15, 15, 35, 0.85);
   backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
@@ -125,7 +125,7 @@
 .dash-dropdown-item.danger:hover { background: rgba(255,75,75,0.12); }
 .dropdown-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 0.3rem 0.5rem; }
 
-/* ── Content ── */
+/* -- Content -- */
 .dash-content {
   max-width: 800px; margin: 0 auto;
   padding: 2.5rem 1.5rem 4rem;
@@ -146,7 +146,7 @@
 .dash-content > *:nth-child(9) { transition-delay: 0.45s; }
 .dash-content > *:nth-child(10) { transition-delay: 0.5s; }
 
-/* ── Hero ── */
+/* -- Hero -- */
 .dash-hero {
   display: flex; align-items: center; justify-content: space-between;
   gap: 2rem; margin-bottom: 2.5rem;
@@ -188,7 +188,7 @@
 }
 .motivation-emoji { animation: float 2.5s ease infinite; }
 
-/* ── Level Ring ── */
+/* -- Level Ring -- */
 .dash-hero-right { flex-shrink: 0; }
 
 .level-ring-wrap {
@@ -221,7 +221,7 @@
   white-space: nowrap;
 }
 
-/* ── Stats Grid ── */
+/* -- Stats Grid -- */
 .dash-stats-grid {
   display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem; margin-bottom: 2.5rem;
@@ -272,7 +272,7 @@
 .stat-green .stat-value { color: #58cc02; }
 .stat-pink .stat-value { color: #ff6b9d; }
 
-/* ── Section Header ── */
+/* -- Section Header -- */
 .section-header {
   display: flex; align-items: center; gap: 0.5rem;
   margin-bottom: 1rem;
@@ -288,7 +288,7 @@
   padding: 0.15rem 0.5rem; border-radius: 999px;
 }
 
-/* ── Course Card ── */
+/* -- Course Card -- */
 .course-card {
   position: relative; border-radius: 24px;
   overflow: hidden; cursor: pointer;
@@ -382,7 +382,7 @@
 .cta-arrow { transition: transform 0.2s; }
 .course-cta:hover .cta-arrow { transform: translateX(4px); }
 
-/* ── Daily Challenge ── */
+/* -- Daily Challenge -- */
 .daily-card {
   position: relative; border-radius: 20px; overflow: hidden;
   background: rgba(255,255,255,0.04);
@@ -431,7 +431,7 @@
   transition: width 0.6s ease;
 }
 
-/* ── Achievements Grid ── */
+/* -- Achievements Grid -- */
 .achievements-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 0.65rem; margin-bottom: 2.5rem;
@@ -466,7 +466,7 @@
   font-size: 1.2rem; opacity: 0.6;
 }
 
-/* ── Next Level Card ── */
+/* -- Next Level Card -- */
 .next-level-card {
   border-radius: 16px; overflow: hidden;
   background: rgba(255,255,255,0.03);
@@ -488,7 +488,7 @@
   transition: width 0.8s ease;
 }
 
-/* ── Responsive ── */
+/* -- Responsive -- */
 @media (max-width: 600px) {
   .dash-hero { flex-direction: column; text-align: center; }
   .dash-hero-title { font-size: 1.5rem; }
@@ -499,7 +499,7 @@
   .achievements-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* ── Animations ── */
+/* -- Animations -- */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
@@ -514,9 +514,9 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ══════════════════════════════════════════════════
-   MODALES — Perfil y Configuración
-══════════════════════════════════════════════════ */
+/* ==================================================
+   MODALES -- Perfil y Configuracion
+   ================================================== */
 .modal-overlay {
   position: fixed; inset: 0; z-index: 1000;
   background: rgba(0,0,0,0.7);
@@ -555,7 +555,7 @@
 .modal-close:hover { background: rgba(255,75,75,0.2); color: #ff4b4b; }
 .modal-body { padding: 0 28px 28px; }
 
-/* ── Perfil ── */
+/* -- Perfil -- */
 .profile-avatar-big {
   width: 80px; height: 80px; border-radius: 50%;
   background: linear-gradient(135deg, #58cc02, #1cb0f6, #ce82ff);
@@ -588,7 +588,7 @@
 .ps-lbl { display: block; font-size: 0.62rem; font-weight: 800; color: #666; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 2px; }
 .profile-joined { font-size: 0.78rem; color: #555; font-weight: 600; text-align: center; }
 
-/* ── Configuración ── */
+/* -- Configuracion -- */
 .settings-section { margin-bottom: 20px; }
 .settings-section-title {
   display: block; font-size: 0.72rem; font-weight: 900;
@@ -641,7 +641,7 @@
 }
 
 /* ======================================================
-   PHOTO PROFILE � New styles
+   PHOTO PROFILE — New styles
    ====================================================== */
 .profile-avatar-section {
   display:flex; flex-direction:column; align-items:center; gap:12px; margin-bottom:24px;
